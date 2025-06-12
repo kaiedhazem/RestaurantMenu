@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu - Restaurant Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fefefe;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    section.menu {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    .category {
+      margin-top: 2rem;
+    }
+    .category h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+      font-family: 'Playfair Display', serif;
+    }
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 0.5rem 0;
+      border-bottom: 1px dashed #ccc;
+    }
+    .item-name {
+      font-weight: bold;
+    }
+    .item-desc {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.8rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      .item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .item-price {
+        margin-top: 0.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Le Délice Gourmand</h1>
+    <p>Menu du Jour</p>
+  </header>
+
+  <section class="menu">
+    <div class="category">
+      <h2>Entrées</h2>
+      <div class="item">
+        <div>
+          <div class="item-name">Salade César</div>
+          <div class="item-desc">Laitue romaine, poulet grillé, croûtons, parmesan</div>
+        </div>
+        <div class="item-price">7€</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="item-name">Soupe du jour</div>
+          <div class="item-desc">Préparée avec des légumes frais du marché</div>
+        </div>
+        <div class="item-price">6€</div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Plats principaux</h2>
+      <div class="item">
+        <div>
+          <div class="item-name">Boeuf Bourguignon</div>
+          <div class="item-desc">Viande mijotée au vin rouge, carottes et champignons</div>
+        </div>
+        <div class="item-price">14€</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="item-name">Risotto aux champignons</div>
+          <div class="item-desc">Crème, parmesan, champignons sauvages</div>
+        </div>
+        <div class="item-price">13€</div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Desserts</h2>
+      <div class="item">
+        <div>
+          <div class="item-name">Fondant au chocolat</div>
+          <div class="item-desc">Servi avec glace vanille maison</div>
+        </div>
+        <div class="item-price">6€</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="item-name">Tarte Tatin</div>
+          <div class="item-desc">Pommes caramélisées, pâte feuilletée</div>
+        </div>
+        <div class="item-price">5,50€</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Le Délice Gourmand — Tous droits réservés
+  </footer>
+</body>
+</html>
